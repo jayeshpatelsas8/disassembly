@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "program": "lk_lk.bin",
+    "architecture": "AARCH64:LE:64:v8A",
+    "compiler_spec": "default",
+    "image_base": "00000000",
+    "script": "export_unlock_evidence.java"
+  },
+  "seed_functions": ["FUN_ffff000050fa228c"],
+  "functions_analyzed": [{"name":"FUN_ffff000050fa228c","entry":"ffff000050fa228c","byte_size":216}],
+  "instructions": [
+    {"address":"ffff000050fa228c","function":"FUN_ffff000050fa228c","mnemonic":"stp","operands":"x29,x30,[sp, #-0x10]!","bytes":"fd7bbfa9","text":"stp x29,x30,[sp, #-0x10]!"},
+    {"address":"ffff000050fa2290","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"x29,sp","bytes":"fd030091","text":"mov x29,sp"},
+    {"address":"ffff000050fa2294","function":"FUN_ffff000050fa228c","mnemonic":"sub","operands":"w8,w0,#0x6b","bytes":"08ac0151","text":"sub w8,w0,#0x6b"},
+    {"address":"ffff000050fa2298","function":"FUN_ffff000050fa228c","mnemonic":"cmp","operands":"w8,#0x5","bytes":"1f150071","text":"cmp w8,#0x5"},
+    {"address":"ffff000050fa229c","function":"FUN_ffff000050fa228c","mnemonic":"b.hi","operands":"0xffff000050fa22cc","bytes":"88010054","text":"b.hi 0xffff000050fa22cc"},
+    {"address":"ffff000050fa22a0","function":"FUN_ffff000050fa228c","mnemonic":"adrp","operands":"x9,-0xffffaefe5000","bytes":"c90300b0","text":"adrp x9,-0xffffaefe5000"},
+    {"address":"ffff000050fa22a4","function":"FUN_ffff000050fa228c","mnemonic":"add","operands":"x9,x9,#0x5e4","bytes":"29911791","text":"add x9,x9,#0x5e4"},
+    {"address":"ffff000050fa22a8","function":"FUN_ffff000050fa228c","mnemonic":"adr","operands":"x10,-0xffffaf05dd48","bytes":"8a000010","text":"adr x10,-0xffffaf05dd48"},
+    {"address":"ffff000050fa22ac","function":"FUN_ffff000050fa228c","mnemonic":"ldrb","operands":"w11,[x9, x8, LSL ]","bytes":"2b696838","text":"ldrb w11,[x9, x8, LSL ]"},
+    {"address":"ffff000050fa22b0","function":"FUN_ffff000050fa228c","mnemonic":"add","operands":"x10,x10,x11, LSL #0x2","bytes":"4a090b8b","text":"add x10,x10,x11, LSL #0x2"},
+    {"address":"ffff000050fa22b4","function":"FUN_ffff000050fa228c","mnemonic":"br","operands":"x10","bytes":"40011fd6","text":"br x10"},
+    {"address":"ffff000050fa22b8","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,w1","bytes":"e003012a","text":"mov w0,w1"},
+    {"address":"ffff000050fa22bc","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w1,#0x1","bytes":"21008052","text":"mov w1,#0x1"},
+    {"address":"ffff000050fa22c0","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050fa0da0","bytes":"b8faff97","text":"bl 0xffff000050fa0da0"},
+    {"address":"ffff000050fa22c4","function":"FUN_ffff000050fa228c","mnemonic":"lsl","operands":"w1,w0,#0xe","bytes":"01441253","text":"lsl w1,w0,#0xe"},
+    {"address":"ffff000050fa22c8","function":"FUN_ffff000050fa228c","mnemonic":"b","operands":"0xffff000050fa2340","bytes":"1e000014","text":"b 0xffff000050fa2340"},
+    {"address":"ffff000050fa22cc","function":"FUN_ffff000050fa228c","mnemonic":"adrp","operands":"x1,-0xffffaf00e000","bytes":"81020090","text":"adrp x1,-0xffffaf00e000"},
+    {"address":"ffff000050fa22d0","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,#0xffffffff","bytes":"00008012","text":"mov w0,#0xffffffff"},
+    {"address":"ffff000050fa22d4","function":"FUN_ffff000050fa228c","mnemonic":"add","operands":"x1,x1,#0xff","bytes":"21fc0391","text":"add x1,x1,#0xff"},
+    {"address":"ffff000050fa22d8","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050f29978","bytes":"a81dfe97","text":"bl 0xffff000050f29978"},
+    {"address":"ffff000050fa22e0","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,w1","bytes":"e003012a","text":"mov w0,w1"},
+    {"address":"ffff000050fa22e4","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w1,#0x1","bytes":"21008052","text":"mov w1,#0x1"},
+    {"address":"ffff000050fa22e8","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050fa0da0","bytes":"aefaff97","text":"bl 0xffff000050fa0da0"},
+    {"address":"ffff000050fa22ec","function":"FUN_ffff000050fa228c","mnemonic":"lsl","operands":"w1,w0,#0xf","bytes":"01401153","text":"lsl w1,w0,#0xf"},
+    {"address":"ffff000050fa22f0","function":"FUN_ffff000050fa228c","mnemonic":"b","operands":"0xffff000050fa2340","bytes":"14000014","text":"b 0xffff000050fa2340"},
+    {"address":"ffff000050fa22f4","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,w1","bytes":"e003012a","text":"mov w0,w1"},
+    {"address":"ffff000050fa22f8","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w1,#0x1","bytes":"21008052","text":"mov w1,#0x1"},
+    {"address":"ffff000050fa22fc","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050fa0da0","bytes":"a9faff97","text":"bl 0xffff000050fa0da0"},
+    {"address":"ffff000050fa2300","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w1,w0","bytes":"e103002a","text":"mov w1,w0"},
+    {"address":"ffff000050fa2304","function":"FUN_ffff000050fa228c","mnemonic":"b","operands":"0xffff000050fa2340","bytes":"0f000014","text":"b 0xffff000050fa2340"},
+    {"address":"ffff000050fa2308","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,w1","bytes":"e003012a","text":"mov w0,w1"},
+    {"address":"ffff000050fa230c","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w1,#0x1","bytes":"21008052","text":"mov w1,#0x1"},
+    {"address":"ffff000050fa2310","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050fa0da0","bytes":"a4faff97","text":"bl 0xffff000050fa0da0"},
+    {"address":"ffff000050fa2314","function":"FUN_ffff000050fa228c","mnemonic":"lsl","operands":"w1,w0,#0x1","bytes":"01781f53","text":"lsl w1,w0,#0x1"},
+    {"address":"ffff000050fa2318","function":"FUN_ffff000050fa228c","mnemonic":"b","operands":"0xffff000050fa2340","bytes":"0a000014","text":"b 0xffff000050fa2340"},
+    {"address":"ffff000050fa231c","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,w1","bytes":"e003012a","text":"mov w0,w1"},
+    {"address":"ffff000050fa2320","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w1,#0x1","bytes":"21008052","text":"mov w1,#0x1"},
+    {"address":"ffff000050fa2324","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050fa0da0","bytes":"9ffaff97","text":"bl 0xffff000050fa0da0"},
+    {"address":"ffff000050fa2328","function":"FUN_ffff000050fa228c","mnemonic":"lsl","operands":"w1,w0,#0x2","bytes":"01741e53","text":"lsl w1,w0,#0x2"},
+    {"address":"ffff000050fa232c","function":"FUN_ffff000050fa228c","mnemonic":"b","operands":"0xffff000050fa2340","bytes":"05000014","text":"b 0xffff000050fa2340"},
+    {"address":"ffff000050fa2330","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,w1","bytes":"e003012a","text":"mov w0,w1"},
+    {"address":"ffff000050fa2334","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w1,#0x10","bytes":"01028052","text":"mov w1,#0x10"},
+    {"address":"ffff000050fa2338","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050fa0da0","bytes":"9afaff97","text":"bl 0xffff000050fa0da0"},
+    {"address":"ffff000050fa233c","function":"FUN_ffff000050fa228c","mnemonic":"lsl","operands":"w1,w0,#0x10","bytes":"013c1053","text":"lsl w1,w0,#0x10"},
+    {"address":"ffff000050fa2340","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,#0x6","bytes":"c0008052","text":"mov w0,#0x6"},
+    {"address":"ffff000050fa2344","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050f63f40","bytes":"ff06ff97","text":"bl 0xffff000050f63f40"},
+    {"address":"ffff000050fa2348","function":"FUN_ffff000050fa228c","mnemonic":"cbz","operands":"w0,0xffff000050fa2364","bytes":"e0000034","text":"cbz w0,0xffff000050fa2364"},
+    {"address":"ffff000050fa234c","function":"FUN_ffff000050fa228c","mnemonic":"adrp","operands":"x1,-0xffffaf005000","bytes":"c10200b0","text":"adrp x1,-0xffffaf005000"},
+    {"address":"ffff000050fa2350","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w2,w0","bytes":"e203002a","text":"mov w2,w0"},
+    {"address":"ffff000050fa2354","function":"FUN_ffff000050fa228c","mnemonic":"add","operands":"x1,x1,#0x678","bytes":"21e01991","text":"add x1,x1,#0x678"},
+    {"address":"ffff000050fa2358","function":"FUN_ffff000050fa228c","mnemonic":"mov","operands":"w0,#0xffffffff","bytes":"00008012","text":"mov w0,#0xffffffff"},
+    {"address":"ffff000050fa235c","function":"FUN_ffff000050fa228c","mnemonic":"bl","operands":"0xffff000050f29978","bytes":"871dfe97","text":"bl 0xffff000050f29978"},
+    {"address":"ffff000050fa2364","function":"FUN_ffff000050fa228c","mnemonic":"ldp","operands":"x29,x30,[sp], #0x10","bytes":"fd7bc1a8","text":"ldp x29,x30,[sp], #0x10"},
+    {"address":"ffff000050fa2368","function":"FUN_ffff000050fa228c","mnemonic":"ret","operands":"","bytes":"c0035fd6","text":"ret"}
+  ],
+  "memory_accesses": [
+    {"instruction_address":"ffff000050fa228c","function":"FUN_ffff000050fa228c","operation":"WRITE","instruction":"stp x29,x30,[sp, #-0x10]!","base_register":"sp","offset":"-0x10!","target_expression":"sp+-0x10!","target_address":null,"target_object":null},
+    {"instruction_address":"ffff000050fa22ac","function":"FUN_ffff000050fa228c","operation":"READ","instruction":"ldrb w11,[x9, x8, LSL ]","base_register":"x9","offset":"x8","target_expression":"x9+x8","target_address":"ffff00005101b5e4","target_object":"switchdataD_ffff00005101b5e4"},
+    {"instruction_address":"ffff000050fa2364","function":"FUN_ffff000050fa228c","operation":"READ","instruction":"ldp x29,x30,[sp], #0x10","base_register":"sp","offset":"0x10","target_expression":"sp+0x10","target_address":null,"target_object":null}
+  ],
+  "data_objects": [
+    {"address":"ffff000050ff20ff","name":"s_mot_sec:_Unsupported_efuse_field_ffff000050ff20ff","data_type":"string"},
+    {"address":"ffff000050ffb678","name":"s_mot_sec:_Writing_MTK_Spare_C_CTR_ffff000050ffb678","data_type":"string"},
+    {"address":"ffff00005101b5e4","name":"switchdataD_ffff00005101b5e4","data_type":"byte"}
+  ],
+  "data_references": [
+    {"object":"s_mot_sec:_Unsupported_efuse_field_ffff000050ff20ff","object_address":"ffff000050ff20ff","instruction":"ffff000050fa22d4","function":"FUN_ffff000050fa228c","access":"DATA","ref_type":"PARAM"},
+    {"object":"s_mot_sec:_Writing_MTK_Spare_C_CTR_ffff000050ffb678","object_address":"ffff000050ffb678","instruction":"ffff000050fa2354","function":"FUN_ffff000050fa228c","access":"DATA","ref_type":"PARAM"},
+    {"object":"switchdataD_ffff00005101b5e4","object_address":"ffff00005101b5e4","instruction":"ffff000050fa22ac","function":"FUN_ffff000050fa228c","access":"DATA","ref_type":"DATA"}
+  ],
+  "bit_operations": [
+
+  ],
+  "indirect_calls": [
+    {"instruction_address":"ffff000050fa22b4","function":"FUN_ffff000050fa228c","kind":"INDIRECT","mnemonic":"BR","target_register":"x10","resolved_target":"ffff000050fa22b8","field_offset":"0x2","target_expression_pcode":null,"raw_backward_chain":[{"address":"ffff000050fa22a8","instruction":"adr x10,-0xffffaf05dd48"},{"address":"ffff000050fa22b0","instruction":"add x10,x10,x11, LSL #0x2"}]}
+  ],
+  "field_offsets": [
+    {"offset":"-0x10!","occurrence_count":1,"occurrences":[{"address":"ffff000050fa228c","function":"FUN_ffff000050fa228c","base_register":"sp","instruction":"stp x29,x30,[sp, #-0x10]!"}]},
+    {"offset":"0x10","occurrence_count":1,"occurrences":[{"address":"ffff000050fa2364","function":"FUN_ffff000050fa228c","base_register":"sp","instruction":"ldp x29,x30,[sp], #0x10"}]},
+    {"offset":"x8","occurrence_count":1,"occurrences":[{"address":"ffff000050fa22ac","function":"FUN_ffff000050fa228c","base_register":"x9","instruction":"ldrb w11,[x9, x8, LSL ]"}]}
+  ],
+  "string_xrefs": [
+    {"address":"ffff000050ff20ff","string":"\"mot_sec: Unsupported efuse field to get written\\n\"","references":[{"instruction_address":"ffff000050fa22d4","function":"FUN_ffff000050fa228c"}]},
+    {"address":"ffff000050ffb678","string":"\"mot_sec: Writing MTK Spare C_CTRL0 fuse bank failed with error: %d\"","references":[{"instruction_address":"ffff000050fa2354","function":"FUN_ffff000050fa228c"}]}
+  ],
+  "warnings": [
+
+  ]
+}
